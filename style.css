@@ -1,0 +1,240 @@
+:root{
+	--primary-color: #e50914;
+	--dark-color: #000000;
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+body{
+	font-family: 'Arial', sans-serif;
+	font-smooth: antialiased;	
+	background: #000 !important;
+	color: #000 ; 
+}
+
+ul{
+	list-style: none;
+}
+
+h1, h2, h3, h4{
+	color: #fff !important;
+}
+
+a{
+	color: #fff !important;
+	text-decoration: none;
+}
+
+p{
+	margin: 0.5rem 0; 
+}
+
+img{
+	width: 100%;
+}
+
+
+.showcase{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: url('images/netflix-bg.jpg') no-repeat center center/cover;
+}
+
+.showcase::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000,  inset -120px -100px 250px #000000;
+}
+
+.showcase-top{
+	position: relative;
+	height: 90px;
+	z-index: 2!important;
+	top: 5%;
+}
+
+.showcase-top img{
+	width: 170px;
+	position: absolute;
+	top: 9%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+}
+
+
+.showcase-top a{
+	position: absolute;
+	top: 7%;
+	right: 0;
+	transform: translate(-50%, -50%);
+}
+
+.showcase-content{
+	position: relative!important;
+	margin: auto!important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 6rem!important;
+	z-index: 2;
+
+}
+
+.showcase-content h1{
+	width: 55%;
+	font-weight: 500;
+	font-size: 4.5rem;
+	line-height: 0.8;
+	margin: 0 4rem 2rem;
+	
+}
+
+.showcase-content p{
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 1.25;
+	margin: 0 0 3rem;
+}
+
+.tabs{
+	background: var(--dark-color);
+	padding-top: 2rem;
+	border-bottom: 4px solid #3d3d3d;
+}
+.tabs p{
+	font-size: 1.2rem!important;
+	padding: 0.5rem!important; 
+}
+
+.tabs .container > div{
+	padding: 1.5rem 0;
+	
+
+}
+
+.tabs .container > div:hover{
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+.tabs .container{
+	display: grid!important;
+	grid-template-row: repeat(3, 1fr);
+	grid-row-gap:  1rem solid #222222;
+	
+}
+
+.container{
+	border-top: 2rem solid #222222;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+	border-width: 10px;
+	color: #222222;
+}
+
+.tabs .container  .tab-item {
+	width: 30%;
+   border-bottom: 0.5rem solid #222222;
+   padding: 10px;
+}
+
+
+.tabs .container  .tab-item  {
+	font-size: 1.5rem!important;
+	padding: 1rem 1.5rem;
+	text-transform: uppercase;
+	background: transparent;
+	border-radius: 2px;
+	border-color: #fff!important;
+	
+   
+}
+
+
+.tabs .container  .btn-xl {
+	background:transparent;
+	width: 30%;
+	border: 2px solid white;
+   padding: 4px;
+   padding-right: 200px;
+   align-items: center;
+   text-align: center!important;
+   justify-content: center;
+}
+
+#tab-1 img{
+	width: 170px;
+	position: absolute;
+	top: 720px;
+	right: 20%;
+}
+
+#tab-2 img{
+	width: 170px;
+	position: absolute;
+	top: 1080px;
+	right: 20%;
+}
+
+#tab-3 img{
+	width: 170px;
+	position: absolute;
+	top: 1480px;
+	right: 20%;
+}
+
+
+
+.btn{
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 0.4rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 2px;
+
+}
+
+.btn:hover{
+	opacity: 0.9;
+}
+
+.btn-rounded{
+	border-radius: 5px;
+}
+
+.btn-xl{
+	font-size: 2rem!important;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+.btn-lg{
+	font-size: 1rem;
+	padding: 0.8rem 1.5rem;
+	text-transform: uppercase;
+}
